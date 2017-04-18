@@ -238,7 +238,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="%"/>
                                 <connections>
-                                    <action selector="percent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rjm-3I-Li9"/>
+                                    <action selector="percent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyP-8T-U46"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1008" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSY-fF-yop">

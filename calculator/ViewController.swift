@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     
     var core = Core<Double>()
     var root = false
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -125,22 +126,26 @@ class ViewController: UIViewController {
 
         }
     }
+    @IBAction func percent(_ sender: UIButton) {
+        let currentNumber = Double(self.displayLabel.text ?? "0")!
+        self.displayLabel.text = "\(currentNumber/100)"
+    }
     @IBAction func log(_ sender: UIButton) {
         let currentNumber = Double(self.displayLabel.text ?? "0")!
        self.displayLabel.text = "\(log10(currentNumber))"
     }
     @IBAction func 負號(_ sender: UIButton) {
-        self.displayLabel.text = "-" + self.displayLabel.text!
-    }
-    @IBAction func percent(_ sender: UIButton) {
         let currentNumber = Double(self.displayLabel.text ?? "0")!
-        self.displayLabel.text = "\(currentNumber/100)"
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//        count += 1
+//        if count%2 == 1{
+        self.displayLabel.text = "\((-1)*(currentNumber))"
+//        }
+//        if count%2 == 0{
+//            self.displayLabel.text = self.displayLabel.text?.replacingOccurrences(of: <#T##String#>, with: <#T##String#>)
+//        }
+        }
     }
 
 
-}
+
 
